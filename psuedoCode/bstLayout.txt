@@ -1,0 +1,6 @@
+create a class and name it tree 
+tree has array as a constructor 
+properties: 
+    class's array is equal to array 
+    class's root is buildTree function with inputs of 
+        array: array, start: 0, end: array.length -1 
