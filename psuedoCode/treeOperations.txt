@@ -1,0 +1,47 @@
+add the tree instance to the class
+    create tree as a constrctor and set the class's tree as the constructor tree
+
+
+insert(value) { 
+    make the current tree's root the function ran recursively with value and the tree root as its inputs 
+
+}
+
+insertNode(value, currentNode) { 
+    if currentNode node is null return new Node with value as its input 
+    return the currentNode if value and currentNode's data are equal 
+    run the function recursviely left with the value and left node if the value is less than the node's data
+    run the function recursively right with the value and right node if value is more than the node's data 
+    after if statements return the current node 
+}
+
+******************
+
+delete() { 
+    run the function recrusively on the the root and node's data
+
+}
+
+******************
+
+deleteNode(rootNode, value) { 
+    return null if the rootNode is null 
+
+    run recrusively left with the left node and value as the inputs if the value is less than root's data 
+    run recrusively right with the right node and value as the inputs if the value is more than root's data
+    else 
+        if there is no left node then return the right Node
+        if there is no right node then return the left node 
+        assign the rootNode data to the min of the right subtree 
+        assign the right node to the function recursively ran with right node and node's data as the inputs  
+}
+
+******************
+
+find(value, rootNode = this.root) { 
+    return null if the rootNode is null 
+    return the rootNOde if the value is equal to the rootNode's data 
+    run the function with inputs as the inserted value and the left node 
+    return with a recursive run of the function with inputs as the value and the right node 
+
+}
