@@ -1,6 +1,7 @@
 import { Node } from "./node.js";
 import { Tree } from "./binarayTreeClass.js";
 import { treeOperations } from "./treeOperations.js";
+import { treeUtils } from "./treeUtils.js";
 
 const node0 = new Node(0);
 const node1 = new Node(1);
@@ -19,8 +20,13 @@ const testArray = [node0, node1, node2, node3,
 
 const testTree = new Tree(testArray); 
 
-const treeOps = new treeOperations(testTree); 
+// const treeOps = new treeOperations(testTree); 
 
-treeOps.insert(node8); 
+const treeMin = new treeUtils(testTree)
 
-console.log(JSON.stringify(testTree.root));
+const minOfTree = treeMin.max(testTree.root); 
+
+console.log("HERE IS Max " , minOfTree.data)
+
+
+// console.log(JSON.stringify(testTree.root));

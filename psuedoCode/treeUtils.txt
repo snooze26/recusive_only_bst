@@ -1,11 +1,13 @@
-min() { 
-
+min(currentNode) { 
+    if the left node is not true then return the node's data
+    return the function recursively ran to the left 
 }
 
 ******************
 
-max() { 
-
+max(currentNode) { 
+    if the right node is not true then return the node's data 
+    return the function recursively ran to the right 
 }
 
 ******************

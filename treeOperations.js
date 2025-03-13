@@ -21,4 +21,8 @@ export class treeOperations{
         return currentNode;
         }
 
+    // deleteNode(value, currentNode) {
+         
+    // }
+
 }
