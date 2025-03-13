@@ -4,3 +4,13 @@ properties:
     class's array is equal to array 
     class's root is buildTree function with inputs of 
         array: array, start: 0, end: array.length -1 
+
+*********************
+buildTree(array) {
+    if start is greater than end then return null 
+    mid will be equal to start + end / 2 rounded 
+    root will be the inputed array with mid as its index 
+    create the left subtree using the method recrusively 
+    create the right subtree using the method recursively 
+    return root 
+ }
