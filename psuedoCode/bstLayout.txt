@@ -1,3 +1,5 @@
+import the node class 
+
 create a class and name it tree 
 tree has array as a constructor 
 properties: 
