@@ -1,0 +1,3 @@
+create a class called Node that takes data as a constructor 
+set the class's data to the data entered 
+create a left and right property and set them to null 
