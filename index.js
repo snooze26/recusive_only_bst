@@ -1,6 +1,6 @@
 import { Node } from "./node.js";
 import { Tree } from "./binarayTreeClass.js";
-import {deleteNode } from "./treeOperations.js";
+import {deleteNode, find } from "./treeOperations.js";
 import { } from "./treeUtils.js";
 
 const node0 = new Node(0);
@@ -21,15 +21,20 @@ const testArray = [node0, node1, node2, node3,
 let testTree = new Tree(testArray); 
 
 
-console.log("BEFORE DELETE**** " , testTree.root.right)
+// console.log("BEFORE DELETE**** " , testTree.root.right)
 
 // testTree.root = deleteNode(node0.data, testTree.root);
 
-const newRoot = deleteNode(node7.data, testTree.root);
-if (newRoot !== testTree.root) {
-    console.log("Updating root of the tree");
-    testTree.root = newRoot;
-}
+// const newRoot = deleteNode(node7.data, testTree.root);
+// if (newRoot !== testTree.root) {
+//     console.log("Updating root of the tree");
+//     testTree.root = newRoot;
+// }
+
+const findRoot = find(node7.data, testTree.root)
+
+
+console.log(findRoot);
 
 // const minOfTree = treeMin.max(testTree.root); 
 
@@ -38,4 +43,4 @@ if (newRoot !== testTree.root) {
 
 // console.log("AFTER DELETE*****" , testTree.root)
 // console.log(JSON.stringify(testTree));
-z
+// console.log("TREE STRUCTURE:", JSON.stringify(testTree, null, 2));

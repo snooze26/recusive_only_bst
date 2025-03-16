@@ -39,3 +39,25 @@ import { min } from "./treeUtils.js";
          }
          return currentNode;
     }
+
+    export function find(value, currentNode) { 
+        console.log(`Comparing value: ${value} to the currentNode data: ${currentNode.data}`);
+
+        if(!currentNode) return null; 
+
+        if(value === currentNode.data) {
+            console.log(`Here is your node ${currentNode}`);
+            return currentNode;
+        }
+
+        if(value < currentNode.data) {
+            console.log("going left");
+            return find(value, currentNode.left);
+        }
+
+        if(value > currentNode.data) { 
+            console.log("going right");
+            return find(value, currentNode.right);
+        }
+        // return currentNode
+    }
