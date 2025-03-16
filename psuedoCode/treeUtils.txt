@@ -13,7 +13,11 @@ max(currentNode) {
 ******************
 
 height() { 
-
+    An empty tree has a height of -1, and a tree with only one node has a height of 0. 
+    if the current tree(root) is empty return -1 
+    if the tree only has 1 node then return a height of 0 
+    
+    for a non empty tree the height is 1 plus the max of the heights of the node's left and right subtree 
 }
 
 ******************

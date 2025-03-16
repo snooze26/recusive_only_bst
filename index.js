@@ -1,7 +1,7 @@
 import { Node } from "./node.js";
 import { Tree } from "./binarayTreeClass.js";
-import {deleteNode, find } from "./treeOperations.js";
-import { } from "./treeUtils.js";
+import {deleteNode, find} from "./treeOperations.js";
+import {height } from "./treeUtils.js";
 
 const node0 = new Node(0);
 const node1 = new Node(1);
@@ -31,10 +31,10 @@ let testTree = new Tree(testArray);
 //     testTree.root = newRoot;
 // }
 
-const findRoot = find(node7.data, testTree.root)
+const treeHeight = height(testTree.root);
 
 
-console.log(findRoot);
+console.log(treeHeight);
 
 // const minOfTree = treeMin.max(testTree.root); 
 

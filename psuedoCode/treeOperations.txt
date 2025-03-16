@@ -2,11 +2,6 @@ add the tree instance to the class
     create tree as a constrctor and set the class's tree as the constructor tree
 
 
-insert(value) { 
-    make the current tree's root the function ran recursively with value and the tree root as its inputs 
-
-}
-
 insertNode(value, currentNode) { 
     if currentNode node is null return new Node with value as its input 
     return the currentNode if value and currentNode's data are equal 
@@ -17,14 +12,9 @@ insertNode(value, currentNode) {
 
 ******************
 
-delete() { 
-    run the function recrusively on the the root and node's data
-
-}
-
 ******************
 
-deleteNode(rootNode, value) { 
+deleteNode(value, currentNode) { 
     return null if the rootNode is null 
 
     run recrusively left with the left node and value as the inputs if the value is less than root's data 
@@ -38,7 +28,7 @@ deleteNode(rootNode, value) {
 
 ******************
 
-find(value, rootNode = this.root) { 
+find(value, currentNode) { 
     return null if the rootNode is null 
     return the rootNOde if the value is equal to the rootNode's data 
     run the function with inputs as the inserted value and the left node 
