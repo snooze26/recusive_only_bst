@@ -12,6 +12,8 @@ const node5 = new Node(5);
 const node6 = new Node(6); 
 const node7 = new Node(7); 
 const node8 = new Node(8); 
+const node9 = new Node(9); 
+
 
 
 const testArray = [node0, node1, node2, node3,

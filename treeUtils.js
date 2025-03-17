@@ -8,6 +8,7 @@ export function min(currentNode) {
 }
 
 export function max(currentNode) { 
+    if(!currentNode) return null;
     if(!currentNode.right) return currentNode.data;
     return max(currentNode.right);
 }
@@ -29,4 +30,3 @@ export function height(tree){
     
 }
 
-//WORKING ON HEIGHT FUNCTION LEFT OFF ON AN ERROR CALLING A NULL RIGHT NODE AT THE END OF THE RUN AND GETTING A INCORRECT VALUE FOR HEIGHT
