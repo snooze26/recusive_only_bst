@@ -22,6 +22,12 @@ height() {
 
 ******************
 
-depth() { 
-
+depth(value, currentNode) { 
+    if the tree is empty return -1 
+    create a dist variable and set to -1 
+    if the value is eqaul to the currentNode.data return dist
+    OR dist = depth(value, currentNode.left)
+    OR dist = depth(value, currentNode.right)
+             return dist + 1 
+    return dist 
 }
