@@ -23,10 +23,14 @@ inOrder(root) {
 
 ******************
 preOrder() {
-    if root is null return 
+    visit (log) the root node 
+    recursively run to the left on the left subtree 
+    recursively run to the right on the right subtree 
+
 }
 
 ******************
 postOrder() { 
+    if root is null return 
 
 }

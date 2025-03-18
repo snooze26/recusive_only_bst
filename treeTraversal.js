@@ -16,9 +16,18 @@ export function levelOrder(root, level, result) {
 
 export function inOrder(root) {
     if(!root) return;
-    
+
     inOrder(root.left);    
     console.log(root.data);
     inOrder(root.right); 
 
+ }
+
+ export function preOrder(root) { 
+    if(!root) return; 
+
+    console.log(root.data);
+    preOrder(root.left);
+    preOrder(root.right); 
+    
  }
