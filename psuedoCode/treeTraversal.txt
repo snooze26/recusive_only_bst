@@ -32,5 +32,9 @@ preOrder() {
 ******************
 postOrder() { 
     if root is null return 
+    
+    recursively run to the left on the left subtree 
+    recursively run to the right on the right subtree 
+    visit the root node 
 
 }

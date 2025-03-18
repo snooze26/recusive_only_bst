@@ -29,5 +29,13 @@ export function inOrder(root) {
     console.log(root.data);
     preOrder(root.left);
     preOrder(root.right); 
-    
+
+ }
+
+ export function postOrder(root) { 
+    if(!root) return; 
+
+    postOrder(root.left);
+    postOrder(root.right); 
+    console.log(root.data); 
  }
