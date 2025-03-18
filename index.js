@@ -2,6 +2,7 @@ import { Node } from "./node.js";
 import { Tree } from "./binarayTreeClass.js";
 import {deleteNode, find} from "./treeOperations.js";
 import {depth, height } from "./treeUtils.js";
+import { levelOrder } from "./treeTraversal.js";
 
 const node0 = new Node(0);
 const node1 = new Node(1);
@@ -32,8 +33,10 @@ let testTree = new Tree(testArray);
 //     console.log("Updating root of the tree");
 //     testTree.root = newRoot;
 // }
+let level = 0;
+let result = []; 
 
-const treeDepth = depth(2, testTree.root);
+const treeDepth = levelOrder(testTree.root, level, result);
 
 
 console.log(treeDepth);

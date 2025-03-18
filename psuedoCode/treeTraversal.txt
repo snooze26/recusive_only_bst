@@ -1,4 +1,14 @@
-levelOrder() { 
+levelOrder(root, level, result) { 
+    if root is null then return null 
+
+    add a new level to the result array 
+        check if res is less than or equal to level 
+            if so add a empty array to results 
+        
+        Add the current node's data to the corresponding level 
+            add the root's data to the level in the results 
+        
+        recursively run the function for the left and right child nodes 
 
 }
 
