@@ -13,19 +13,20 @@ levelOrder(root, level, result) {
 }
 
 ******************
+inOrder(root) { 
+    if root is null return
 
-inOrder() { 
-
+    recursively run to the left on the left subtree 
+    run recursively on the root node 
+    recursively run to the right on the right subtree
 }
 
 ******************
-
 preOrder() {
-
+    if root is null return 
 }
 
 ******************
-
 postOrder() { 
 
 }
