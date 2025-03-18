@@ -14,20 +14,12 @@ export function max(currentNode) {
 }
 
 export function height(tree) { 
-    console.log(`Tree that is being entered:  ${tree}` )
     if(!tree) return -1 
-
 
     if((max(tree.left) === max(tree.right))) return 0; 
 
-    console.log(`LEFT TREE MAX ${max(tree.left)}`)
-    console.log(`RIGHT TREE MAX ${max(tree.right)}`)
-
-
-
     return 1 + ((height(tree.left)) + height(tree.right)); 
-    
-    
+        
 }
 
 export function depth(value, currentNode) { 
