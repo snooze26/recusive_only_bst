@@ -1,4 +1,6 @@
 import { Node } from "./node.js";
+import { inOrder } from "./treeTraversal.js";
+import { insertNode } from "./treeOperations.js";
 
 export class Tree { 
     constructor(array) { 
@@ -16,5 +18,17 @@ export class Tree {
         root.right = this.buildTree(array, mid + 1, end);
 
         return root
+    }
+
+    reBalance() { 
+        let nodes = [];
+        
+        inOrder(this.root, nodes); 
+        
+        this.root = this.buildTree(nodes, 0, nodes.length - 1);
+    }
+
+    insert(value) { 
+        this.root = insertNode(value, this.root)
     }
 }

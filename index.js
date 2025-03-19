@@ -1,6 +1,6 @@
 import { Node } from "./node.js";
 import { Tree } from "./binarayTreeClass.js";
-import {deleteNode, find} from "./treeOperations.js";
+import {deleteNode, find, insertNode} from "./treeOperations.js";
 import {depth, height } from "./treeUtils.js";
 import { inOrder, levelOrder, postOrder, preOrder } from "./treeTraversal.js";
 import { isBalanced } from "./treeBalance.js";
@@ -19,10 +19,28 @@ const node9 = new Node(9);
 
 
 const testArray = [node0, node1, node2, node3,
-                   node4, node5, node8
+                   node4, node5, node8, node9
 ]
 
+
+
 let testTree = new Tree(testArray); 
+
+testTree.insert(node6.data)
+testTree.insert(node7.data); 
+// const newArray = [node4, node9, node2, node3,
+//     node4, node5, node8, node1
+// ]
+
+// testTree = new Tree(newArray); 
+
+console.log("TREE STRUCTURE (BEFORE):", JSON.stringify(testTree, null, 2));
+
+testTree.reBalance();
+
+console.log("TREE STRUCTURE (AFTER):", JSON.stringify(testTree, null, 2));
+
+
 
 
 // console.log("BEFORE DELETE**** " , testTree.root.right)
@@ -37,10 +55,7 @@ let testTree = new Tree(testArray);
 let level = 0;
 let result = []; 
 
-const treeDepth = isBalanced(testTree.root);
 
-
-console.log(isBalanced(testTree));
 
 // const minOfTree = treeMin.max(testTree.root); 
 

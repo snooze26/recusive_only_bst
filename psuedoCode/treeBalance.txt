@@ -1,11 +1,21 @@
 isBalanced() { 
-    
+    capture the height of the left subtree
+    capture the height of the right subtree 
+
+    check if the two height added together is less than or to equal 1 
+        run recusively left 
+        run recurisvely right 
+        return true
+
+    return false     
 }
 
 ********************
 
 reBalance() { 
-
+    create a array to collect the nodes in 
+    run the inOrder function on the currentnode and nodes array 
+    run the buildTree function to build the knew tree using the nodes array, 0 , -1 the nodes length as your inputing values    
 }
 
 *********************

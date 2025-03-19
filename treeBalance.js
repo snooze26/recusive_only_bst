@@ -1,4 +1,5 @@
 import { height } from "./treeUtils.js";
+
 export function isBalanced(currentNode) { 
     if(!currentNode) return true; 
 
@@ -12,5 +13,4 @@ export function isBalanced(currentNode) {
     }
     return isBalanced(currentNode.left) && isBalanced(currentNode.right);
     
-
 }

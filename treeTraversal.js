@@ -14,12 +14,13 @@ export function levelOrder(root, level, result) {
 }
 
 
-export function inOrder(root) {
+export function inOrder(root, nodes=[]) {
     if(!root) return;
 
-    inOrder(root.left);    
-    console.log(root.data);
-    inOrder(root.right); 
+    inOrder(root.left, nodes);    
+    nodes.push(root.data);
+    inOrder(root.right, nodes); 
+    return nodes
 
  }
 
